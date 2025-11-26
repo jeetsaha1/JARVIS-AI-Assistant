@@ -9,10 +9,8 @@ Inspired by Tony Stark’s JARVIS from Iron Man. 🚀
 
 ## 🎥 Demo GIF (Add your GIF here)
 
-> Replace `assets/jarvis.gif` with your own GIF file.
-
 <p align="center">
-  <img src="asset/jarvis.gif" width="500">
+  <img src="asset/jarvis.gif" width="900">
 </p>
 
 ---
