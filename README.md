@@ -75,29 +75,6 @@ Close apps:
 
 ---
 
-## 📂 Folder Structure
-
-
-
-Jarvis/
-│
-├── main.py
-├── README.md
-│
-├── modules/
-│ ├── ai_core.py
-│ ├── knowledge.py
-│ ├── system_control.py
-│ ├── web_features.py
-│ ├── speech_listener.py
-│ └── voice_engine.py
-│
-└── data/
-├── memory.json
-└── tasks.txt
-
-
----
 
 ## 🛠 Installation
 
