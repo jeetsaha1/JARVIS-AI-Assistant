@@ -7,7 +7,7 @@ Inspired by Tony Stark’s JARVIS from Iron Man. 🚀
 
 ---
 
-## 🎥 Demo GIF (Add your GIF here)
+## 🎥 Demo GIF 
 
 <p align="center">
   <img src="asset/jarvis.gif" width="900">
