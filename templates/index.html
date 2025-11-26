@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarvis AI Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Jarvis</h2>
+      <div id="logs"></div>
+      <button id="mic-btn">🎤 Speak</button>
+    </div>
+    
+    <div class="main">
+      <canvas id="orbitCanvas"></canvas>
+      <div id="listening">Listening...</div>
+    </div>
+  </div>
+
+  <script src="/static/jarvis_orbit.js"></script>
+  <script>
+    const micBtn = document.getElementById("mic-btn");
+    const logs = document.getElementById("logs");
+    const listening = document.getElementById("listening");
+
+    micBtn.onclick = async () => {
+      listening.style.display = "block";
+      const response = await fetch("/listen");
+      const data = await response.json();
+      listening.style.display = "none";
+      logs.innerHTML += `<p>🗣 You: ${data.user}</p><p>🤖 Jarvis: ${data.jarvis}</p>`;
+    };
+  </script>
+</body>
+</html>
